@@ -30,6 +30,15 @@ fig = px.choropleth(
     title='World Cup Wins by Country',
     color_continuous_scale=px.colors.sequential.Plasma
 )
+fig.update_layout(
+        geo=dict(
+            showcoastlines=True,
+            coastlinecolor="Black",
+            showocean=True,
+            oceancolor="lightblue"
+        ),
+        margin = {"r":0,"t":0,"l":0,"b":0}
+    )
 
 app = dash.Dash()
 server = app.server
