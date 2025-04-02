@@ -83,5 +83,6 @@ def total_wins(country):
 def display_results(year):
     row = fifa_df[fifa_df['Year'] == year].iloc[0]
     return html.H3(f"Stats for FIFA world cup {year} -- Winner: {row['Winners']}, and Runner-Up: {row['Runners-up']}")
-
-app.run(debug=True)
+    
+if __name__ == '__main__':
+    app.run(debug=True)
