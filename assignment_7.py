@@ -40,7 +40,7 @@ fig.update_layout(
         margin = {"r":0,"t":0,"l":0,"b":0}
     )
 
-app = dash.Dash()
+app = dash.Dash(__name__)
 server = app.server
 default_year = fifa_df['Year'][0]
 default_country = winner_counts["Country"][0]
