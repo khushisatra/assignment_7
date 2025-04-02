@@ -32,7 +32,7 @@ fig = px.choropleth(
 )
 
 app = dash.Dash()
-
+server = app.server
 default_year = fifa_df['Year'][0]
 default_country = winner_counts["Country"][0]
 
