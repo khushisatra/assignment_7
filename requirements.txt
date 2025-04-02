@@ -1,0 +1,6 @@
+pandas
+dash
+plotly
+requests
+bs4
+gunicorn
